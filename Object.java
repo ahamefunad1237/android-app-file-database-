@@ -13,7 +13,13 @@ public final class Object {
      }
   }
 
-   public int getDataString(){
+   public String getDataString(){
+      if(getDataStringLength() > 0){
+         return mdata;
+      }
+   }
+   
+   private int getDataStringLength(){
       if(mdatalength > 0){
          return mdatalength
       }
